@@ -1,6 +1,6 @@
-/******************* GLOBAL STYLES open******************/
+/******************* GLOBAL STYLES ******************/
 
-/*** Global Styles open***/
+/*** Global Styles ***/
 
 html,
 body {
@@ -16,9 +16,7 @@ body {
 
 }
 
-/*close*/
-
-/*** Typography open***/
+/*** Typography ***/
 
 /* Fluid Typography */
 
@@ -77,13 +75,9 @@ li {
 }
 */
 
-/* close */
+/******************* HOME PAGE ******************/
 
-/* close */
-
-/******************* HOME PAGE open ******************/
-
-/*** Nav (Overlay) open ***/
+/*** Nav (Overlay) ***/
 
 .nav-elements-bar {
     position: fixed;
@@ -318,9 +312,7 @@ overlay ul:after {
     }
 }
 
-/* close */
-
-/*** Primary Text open***/
+/*** Primary Text ***/
 
 .page-wrapper {
     width: 100vw;
@@ -342,9 +334,7 @@ overlay ul:after {
     -webkit-box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.85);
 }
 
-/*close*/
-
-/*** Spinning Text open ***/
+/*** Spinning Text ***/
 
 .page-wrapper-inner {
     vertical-align: middle;
@@ -451,9 +441,9 @@ overlay ul:after {
     color: inherit;
 }
 
-/** Color Dropdowns open **/
+/** Color Dropdowns **/
 
-/* :before params open*/
+/* :before params */
 
 .spin-text-list-item:before,
 .spin-text-list-item:before,
@@ -494,9 +484,7 @@ overlay ul:after {
     width: 20rem;
 }
 
-/* close */
-
-/* :after params open */
+/* :after params */
 
 .spin-text-list-item#list-music:after,
 .spin-text-list-item#list-code:after,
@@ -528,9 +516,7 @@ overlay ul:after {
     opacity: 1;
 }
 
-/*close */
-
-/* keyframes open */
+/* keyframes */
 
 /* The math to figure out the keyframe percentages to change speed etc:
 // 4 is the number of animation.
@@ -595,11 +581,8 @@ overlay ul:after {
     }
 }
 
-/*close*/
 
-/*close*/
-
-/** Subtitles open **/
+/** Subtitles **/
 
 #list-subtitle {
     position: absolute;
@@ -615,11 +598,7 @@ overlay ul:after {
     /*border:2px solid #A00;*/
 }
 
-/* close */
-
-/*close*/
-
-/*** Media Players open***/
+/*** Media Players ***/
 
 #media-container {
     position: absolute;
@@ -873,10 +852,7 @@ overlay ul:after {
     transform: rotate(-45deg);
 }
 
-
-/* close */
-
-/*** Source Code open***/
+/*** Source Code ***/
 
 #source-container {
     position: absolute;
@@ -1067,9 +1043,7 @@ overlay ul:after {
     transform: rotate(-45deg);
 }
 
-/*close*/
-
-/*** Create Section open ***/
+/*** Create Section ***/
 
 #create-container {
     position: absolute;
@@ -1269,13 +1243,9 @@ overlay ul:after {
     transform: rotate(-45deg);
 }
 
-/* close */
+/******************* CODE PAGE  ******************/
 
-/* close */
-
-/******************* CODE PAGE open ******************/
-
-/** Nav section open **/
+/** Nav section **/
 
 .nav-container {
     position: relative;
@@ -1372,9 +1342,7 @@ nav ul li a {
 
 }
 
-/* close  */
-
-/** Header section open **/
+/** Header section **/
 
 header {
     /*
@@ -1459,8 +1427,6 @@ header {
 }
 */
 
-/* close */
-
 /** Aside section open **/
 
 /*
@@ -1468,13 +1434,9 @@ aside {
     position: relative;
     z-index: 10;
 }
-
-
 */
 
-/* close */
-
-/** Section open **/
+/** Section **/
 
 section.intro {
     background: #fff;
@@ -1485,12 +1447,9 @@ section.intro {
     z-index: 15;
 }
 
-/* close */
-
-/* close */
-
 /******************* MEDIA QUERIES ******************/
 
-/*** Media Queries open ***/
+/*** Global ***/
 
-/* close */
+
+/*** Home ***/
