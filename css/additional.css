@@ -1,0 +1,29 @@
+      /* Pressed Text */  
+
+.pressed-text span {
+  color: transparent;
+  position: relative;
+  z-index: 0;
+    font-weight: 800;
+}
+
+.pressed-text span:before, .pressed-text span:after {
+  content: "Hi, I'm Creator D.";
+  position: absolute;
+  left: 0;  
+  color: #222; /* Fallback for non-webkit */
+}
+
+.pressed-text span:before {  
+  z-index: 1;
+  background: url("http://creatord.co.za/wp-content/uploads/2017/10/paul-volkmer-143617-scaled-down.jpeg");
+  background: -o-linear-gradient(transparent, transparent);
+  /* Negates the texture in Opera since it won't be clipped */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pressed-text span:after {
+  text-shadow: 0px 1px 2px rgba(255,255,255,0.2);
+  z-index: -1;
+}
