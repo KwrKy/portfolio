@@ -1274,7 +1274,7 @@ header .header-banner {
 
 .under-text {
   position: fixed;
-  opacity: 0;
+  opacity: 1;
   top: 25%;
   right: 50%;
   transform: translateX(50%);
