@@ -1508,7 +1508,6 @@ section.code-project .code-subhead {
 
 section.code-project .code-subhead h2 {
   display: block;
-  vertical-align: center;
 }
 
 section.code-project .code-subhead h2:before,
@@ -1545,7 +1544,7 @@ section.code-project .project-title {
 }
 
 section.code-project .project-intro {
-  width: 0%%;
+  width: 0;
   height: 11rem;
   margin: 0 auto;
   padding: 0.5rem 2rem;
