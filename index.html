@@ -4,158 +4,158 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home</title>
+  <title>Home</title>
 
-    <!-- External Styles & Scripts -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <!--Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- jQuery -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- FontAwesome -->
-    <link rel='stylesheet' href="css/style.css">
-    <!-- Internal stylesheet -->
-    <script src="js/modernizr.custom.js"></script>
-    <!-- For overlay -->
-    <link rel='stylesheet' href="css/prettify.css">
-    <!--For source code -->
-    <script src="js/prettify.js"></script>
-    <!-- For source code -->
+  <!-- External Styles & Scripts -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!--Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- jQuery -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel='stylesheet' href="css/style.css">
+  <!-- Internal stylesheet -->
+  <script src="js/modernizr.custom.js"></script>
+  <!-- For overlay -->
+  <link rel='stylesheet' href="css/prettify.css">
+  <!--For source code -->
+  <script src="js/prettify.js"></script>
+  <!-- For source code -->
 
-    <!-- Testing Scripts  -->
+  <!-- Testing Scripts  -->
 
 </head>
 
 <body>
-    <!-- Nav Trigger & Logo Bar -->
-    <div class="nav-elements-bar">
-        <a href="index.html"><img class="logo" src="img/Logo%20V2%20Grey.png" alt="CreatorD Logo"></a>
-        <button type="button" class="nav-toggle" id="trigger-overlay"><span></span></button>
-    </div>
+  <!-- Nav Trigger & Logo Bar -->
+  <div class="nav-elements-bar">
+    <a href="index.html"><img class="logo" src="img/Logo%20V2%20Grey.png" alt="CreatorD Logo"></a>
+    <button type="button" class="nav-toggle" id="trigger-overlay"><span></span></button>
+  </div>
 
-    <!-- Nav (Overlay) -->
-    <div class="overlay overlay-hugeinc">
-        <button type="button" class="overlay-close">Close</button>
-        <nav>
-            <ul>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Code</a></li>
-                <li><a href="#">Create</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Clients</a></li>
-                <li><a href="#">Contact</a></li>
+  <!-- Nav (Overlay) -->
+  <div class="overlay overlay-hugeinc">
+    <button type="button" class="overlay-close">Close</button>
+    <nav>
+      <ul>
+        <li><a href="#">Music</a></li>
+        <li><a href="code.html">Code</a></li>
+        <li><a href="#">Create</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Primary Text -->
+  <div class="container-fluid page-wrapper">
+    <div class="page-wrapper-left">
+      <div class="page-wrapper-inner spin-text-content">
+        <div class="row spin-text-content-container">
+          <div class="col-xs-6 inner-left">
+            <div class="spin-text-text" id="left-side-text">
+              <h1>Hi, I'm <span id="creatorD">Creator D.</span></h1>
+            </div>
+          </div>
+          <div class="col-xs-6 inner-right">
+            <ul class="spin-text-list" id="spin-text-list">
+              <li class="spin-text-list-item" id="list-music">
+                <a href="#">
+                  <h2>I write music</h2>
+                </a>
+              </li>
+              <li class="spin-text-list-item" id="list-code">
+                <a href="#source-code">
+                  <h2>I build websites</h2>
+                </a>
+              </li>
+              <li class="spin-text-list-item" id="list-create">
+                <a href="#">
+                  <h2>I create.</h2>
+                </a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+        <div class="row list-subtitle">
+          <!-- Container for right text content -->
+          <div class="col-sm-6">
+          </div>
+          <div class="col-sm-6" id="list-subtitle">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Media Players -->
+  <div id="media-container">
+    <div class="video-player-container">
+      <div class="video-player-wrapper" id="youtube-player">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLpb4MXuppxhtyohftiDxg37LI92CjK3Is" frameborder="0" gesture="media" allowfullscreen></iframe>
+
+      </div>
+    </div>
+    <div class="audio-player-container">
+      <div class="audio-player-wrapper" id="soundcloud-palyer">
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2271597&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+
+      </div>
+    </div>
+    <div id="close-media">
+      <p>Close</p>
+    </div>
+  </div>
+
+  <!-- Source Code -->
+  <div id="source-container">
+    <div id="source-code"></div>
+    <div id="close-source">
+      <p>Close</p>
+    </div>
+  </div>
+
+  <!-- Create Section-->
+  <div id="create-container">
+    <div class="create-content-container">
+      <div class="col-xs-2 create-page-left"></div>
+      <div class="col-xs-8 create-page-mid">
+        <h4>Writing and Editing</h3>
+          <div class="pseudo-hr">&#10078;</div>
+          <p>I have been writing since high school, and editing since 2014. I was the assistant editor for the first edition of the book <em>The World Needs A Father: A Trainer's Guide</em>, and was the lead editor for the second edition.</p>
+          <p>I am currently editing a second book on discipleship, and have been writing copy for the NPO <strong>The World Needs A Father</strong> (TWNAF) since 2016.</p>
+          <h4>Brand Development</h4>
+          <div class="pseudo-hr">&#10070;</div>
+          <p>I was responsible for redeveloping TWNAF's brand, including doing a brand identity evaluation, creating a brand style guide and providing stationery.</p>
+          <h4>Video</h4>
+          <div class="pseudo-hr">&VerticalSeparator;&VerticalSeparator;&#9655;</div>
+          <p>I started editing video in 2015, and have worked with a number of different individuals and organisations to provide simple edits and promotional material. I work primarily in Final Cut Pro.</p>
+
+      </div>
+      <div class="col-xs-2 create-page-right"></div>
     </div>
 
-    <!-- Primary Text -->
-    <div class="container-fluid page-wrapper">
-        <div class="page-wrapper-left">
-            <div class="page-wrapper-inner spin-text-content">
-                <div class="row spin-text-content-container">
-                    <div class="col-xs-6 inner-left">
-                        <div class="spin-text-text" id="left-side-text">
-                            <h1>Hi, I'm <span id="creatorD">Creator D.</span></h1>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 inner-right">
-                        <ul class="spin-text-list" id="spin-text-list">
-                            <li class="spin-text-list-item" id="list-music">
-                                <a href="#">
-                                    <h2>I write music</h2>
-                                </a>
-                            </li>
-                            <li class="spin-text-list-item" id="list-code">
-                                <a href="#source-code">
-                                    <h2>I build websites</h2>
-                                </a>
-                            </li>
-                            <li class="spin-text-list-item" id="list-create">
-                                <a href="#">
-                                    <h2>I create.</h2>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row list-subtitle">
-                    <!-- Container for right text content -->
-                    <div class="col-sm-6">
-                    </div>
-                    <div class="col-sm-6" id="list-subtitle">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div id="close-create">
+      <p>Close</p>
     </div>
+  </div>
 
-    <!-- Media Players -->
-    <div id="media-container">
-        <div class="video-player-container">
-            <div class="video-player-wrapper" id="youtube-player">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLpb4MXuppxhtyohftiDxg37LI92CjK3Is" frameborder="0" gesture="media" allowfullscreen></iframe>
+  <footer>
+  </footer>
 
-            </div>
-        </div>
-        <div class="audio-player-container">
-            <div class="audio-player-wrapper" id="soundcloud-palyer">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2271597&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+  <!-- Additional Scripts  open -->
 
-            </div>
-        </div>
-        <div id="close-media">
-            <p>Close</p>
-        </div>
-    </div>
-
-    <!-- Source Code -->
-    <div id="source-container">
-        <div id="source-code"></div>
-        <div id="close-source">
-            <p>Close</p>
-        </div>
-    </div>
-
-    <!-- Create Section-->
-    <div id="create-container">
-        <div class="create-content-container">
-            <div class="col-xs-2 create-page-left"></div>
-            <div class="col-xs-8 create-page-mid">
-                <h4>Writing and Editing</h3>
-                    <div class="pseudo-hr">&#10078;</div>
-                    <p>I have been writing since high school, and editing since 2014. I was the assistant editor for the first edition of the book <em>The World Needs A Father: A Trainer's Guide</em>, and was the lead editor for the second edition.</p>
-                    <p>I am currently editing a second book on discipleship, and have been writing copy for the NPO <strong>The World Needs A Father</strong> (TWNAF) since 2016.</p>
-                    <h4>Brand Development</h4>
-                    <div class="pseudo-hr">&#10070;</div>
-                    <p>I was responsible for redeveloping TWNAF's brand, including doing a brand identity evaluation, creating a brand style guide and providing stationery.</p>
-                    <h4>Video</h4>
-                    <div class="pseudo-hr">&VerticalSeparator;&VerticalSeparator;&#9655;</div>
-                    <p>I started editing video in 2015, and have worked with a number of different individuals and organisations to provide simple edits and promotional material. I work primarily in Final Cut Pro.</p>
-
-            </div>
-            <div class="col-xs-2 create-page-right"></div>
-        </div>
-
-        <div id="close-create">
-            <p>Close</p>
-        </div>
-    </div>
-
-    <footer>
-    </footer>
-
-    <!-- Additional Scripts  open -->
-
-    <script src="js/classie.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/home.js"></script>
-    <!-- close -->
+  <script src="js/classie.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/home.js"></script>
+  <!-- close -->
 
 </body>
 
