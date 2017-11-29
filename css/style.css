@@ -1372,7 +1372,6 @@ overlay ul:after {
 /** Header section **/
 
 header {
-  width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -1432,6 +1431,8 @@ header .header-banner {
   transform: translateX(-50%);
   width: 50%;
   height: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   -webkit-transition: width 0.7s;
   transition: width 0.7s;
