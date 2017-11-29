@@ -1,13 +1,46 @@
-/******************* GLOBAL STYLES ******************/
+/* Comment Standards */
 
-/*** Global Styles ***/
+/**
+* Unwieldy CSS is no fun, so please follow this comment style guide
+* to keep this document legible and sensible.
+**/
+
+/* ===================================================
+   MAIN HEADINGS look like this - all caps, top and bottom comment bar
+   =================================================== */
+
+/*
+   Section Headings Look Like This - capital case, no top comment bar
+   =================================================== */
+
+/**** Subsection 1 Headings Look Like This - capital case, 4 stars ****/
+
+/**** Subsection 2 headings look like this - sentence case, 2 stars ****/
+
+/* Single line comments look like this */
+
+/**
+* Multi-line comments look like this.
+* Please try not to exceed 70 columns per line.
+* Please follow the same indentations used here
+*
+* @FLAG can be used to highlight any specific issues that need attention
+*
+**/
+
+/* ===================================================
+   GLOBAL STYLES
+   =================================================== */
+
+/* 
+   Global Layout
+   =================================================== */
 
 html,
 body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  /*overflow: hidden;*/
 }
 
 body {
@@ -15,115 +48,11 @@ body {
   line-height: 1.5rem;
 }
 
-.footer-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100vh;
-}
+/* 
+   Typography
+   =================================================== */
 
-.footer-page-content {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  height: 4rem;
-  background: #333;
-  color: #fff;
-  text-align: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 0.8rem;
-  font-weight: 200;
-  z-index: 15;
-  -webkit-box-shadow: 2px -2px 8px rgba(33, 33, 33, 0.8);
-  box-shadow: 2px -2px 8px rgba(33, 33, 33, 0.8);
-}
-
-footer .footer-left-mid {
-  text-align: right;
-  border-right: 1px solid #ccc;
-}
-
-footer .footer-left-mid p {
-  line-height: 1.5;
-  font-size: 0.8rem;
-  margin: 0;
-}
-
-footer .footer-right-mid {
-  text-align: left;
-}
-
-footer .footer-right-mid p {
-  line-height: 1.5;
-  font-size: 0.8rem;
-  margin: 0;
-}
-
-footer .footer-right .socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-footer .footer-right .socials a i {
-  color: #eee;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-footer .footer-right .socials a i:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-footer .footer-right .socials .git:hover {
-  color: #c9510c;
-}
-
-footer .footer-right .socials .in:hover {
-  color: #0077B5;
-}
-
-footer .footer-right .socials .mail:hover {
-  color: #FBEBB4;
-}
-
-footer .footer-right .socials .twit:hover {
-  color: #1DA1F2;
-}
-
-footer .footer-right a {
-  padding: 0.5rem;
-  text-align: center;
-}
-
-/*** Typography ***/
-
-/* Fluid Typography */
+/**** Fluid Typography ****/
 
 html {
   font-size: calc(0.875em + 0.25 * (100vw - 80em) / 40);
@@ -180,9 +109,13 @@ li {
     }
     */
 
-/******************* HOME PAGE ******************/
+/* ===================================================
+   HOME PAGE
+   =================================================== */
 
-/*** Nav (Overlay) ***/
+/* 
+   Overlay (Nav)
+   =================================================== */
 
 .nav-elements-bar {
   position: fixed;
@@ -193,7 +126,7 @@ li {
 }
 
 
-/* Logo */
+/**** Logo ****/
 
 .nav-elements-bar .logo {
   position: absolute;
@@ -208,7 +141,7 @@ li {
 }
 
 
-/* Nav Toggle Button */
+/**** Nav Toggle Button ****/
 
 .nav-elements-bar button {
   position: absolute;
@@ -221,7 +154,7 @@ li {
 }
 
 
-/* Nav Toggle Burger */
+/**** Nav Toggle Burger ****/
 
 .nav-elements-bar .nav-toggle {
   width: 2.5rem;
@@ -268,7 +201,7 @@ li {
 }
 
 
-/* Nav Toggle */
+/**** Nav Toggle ****/
 
 .nav-elements-bar .nav-toggle.open {
   width: 2.5rem;
@@ -304,7 +237,7 @@ li {
 }
 
 
-/* Overlay style */
+/**** Overlay style ****/
 
 .overlay {
   position: fixed;
@@ -316,16 +249,16 @@ li {
   background: rgba(34, 132, 255, 0.9);
 }
 
+/**** Overlay closing cross ****/
 
-/* Overlay closing cross */
+/*need to keep this element in for JS scripts to work */
 
 .overlay .overlay-close {
-  /*need to keep this element in for JS scripts to work */
   opacity: 0;
 }
 
 
-/* Menu style */
+/**** Menu style ****/
 
 .overlay nav {
   position: relative;
@@ -386,7 +319,7 @@ overlay ul:after {
 }
 
 
-/* Effects */
+/**** Effects ****/
 
 .overlay-hugeinc {
   opacity: 0;
@@ -434,7 +367,9 @@ overlay ul:after {
 }
 
 
-/*** Primary Text ***/
+/* 
+   Page Wrapper
+   =================================================== */
 
 .page-wrapper {
   width: 100vw;
@@ -455,7 +390,9 @@ overlay ul:after {
   -webkit-box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.85);
 }
 
-/*** Spinning Text ***/
+/* 
+   Center Text
+   =================================================== */
 
 .page-wrapper-inner {
   vertical-align: middle;
@@ -480,7 +417,7 @@ overlay ul:after {
 }
 
 
-/* Left Hand Side */
+/**** Left Hand Side ****/
 
 .inner-left {
   padding: 0;
@@ -516,7 +453,7 @@ overlay ul:after {
 }
 
 
-/* Right Hand Side */
+/**** Right Hand Side ****/
 
 .inner-right {
   padding: 0;
@@ -566,9 +503,9 @@ overlay ul:after {
 }
 
 
-/** Color Dropdowns **/
+/**** Color Dropdowns ****/
 
-/* :before params */
+/** :before params **/
 
 .spin-text-list-item:before {
   content: "";
@@ -608,7 +545,7 @@ overlay ul:after {
 }
 
 
-/* :after params */
+/** :after params **/
 
 .spin-text-list-item#list-music:after,
 .spin-text-list-item#list-code:after,
@@ -641,25 +578,28 @@ overlay ul:after {
 }
 
 
-/* keyframes */
+/**** Spinning Text Keyframes *****/
 
-/* The math to figure out the keyframe percentages to change speed etc:
-        // 4 is the number of animation.
-        // Here, there are 3 lines :
-
-        // 1 to 2
-        // 2 to 3
-        // 3 to 2
-        // 2 to 1
-
-        // 4x + 4y = 100 (100% duration)
-
-        // HERE : 
-        // y = ? -> Animation between two lines
-        // x = ? -> Time spent on a line
-
-        // You can define a value and calculate the other if you want change speed or the number of lines
-        */
+/** 
+* The math to figure out the keyframe percentages to change speed etc:
+*
+* 4 is the number of animation.
+* Here, there are 3 lines :
+*
+* 1 to 2
+* 2 to 3
+* 3 to 2
+* 2 to 1
+*
+* 4x + 4y = 100 (100% duration)
+*
+* Here: 
+* y = ? -> Animation between two lines
+* x = ? -> Time spent on a line
+*
+* You can define a value and calculate the other if you want change 
+* speed or the number of lines
+**/
 
 @-webkit-keyframes change {
   0%,
@@ -710,7 +650,7 @@ overlay ul:after {
 }
 
 
-/** Subtitles **/
+/**** Subtitles ****/
 
 #list-subtitle {
   position: absolute;
@@ -726,7 +666,7 @@ overlay ul:after {
 }
 
 
-/*** Media Players ***/
+/**** Media Players ****/
 
 #media-container {
   position: absolute;
@@ -738,14 +678,14 @@ overlay ul:after {
 }
 
 
-/* YouTube */
+/** YouTube **/
 
 .video-player-wrapper {
   position: relative;
   bottom: 0;
   padding-bottom: 0;
-  padding-top: 56.25%;
   /* For the 16:9 aspect ratio */
+  padding-top: 56.25%;
   height: 40%;
   display: none;
   animation: slide-out 1s ease-out;
@@ -805,7 +745,7 @@ overlay ul:after {
 }
 
 
-/* SoundCloud */
+/** SoundCloud **/
 
 .audio-player-container {
   z-index: 20;
@@ -880,7 +820,7 @@ overlay ul:after {
 }
 
 
-/* Media button */
+/**** Media button ****/
 
 #close-media {
   position: absolute;
@@ -976,7 +916,9 @@ overlay ul:after {
 }
 
 
-/*** Source Code ***/
+/* 
+   Source Code
+   =================================================== */
 
 #source-container {
   position: absolute;
@@ -1063,7 +1005,7 @@ overlay ul:after {
 }
 
 
-/* Source Button */
+/**** Source Button ****/
 
 #close-source {
   position: absolute;
@@ -1159,7 +1101,9 @@ overlay ul:after {
 }
 
 
-/*** Create Section ***/
+/* 
+   Create Section
+   =================================================== */
 
 #create-container {
   position: absolute;
@@ -1271,7 +1215,7 @@ overlay ul:after {
 }
 
 
-/* Source Button */
+/**** Source Button ****/
 
 #close-create {
   position: absolute;
@@ -1365,9 +1309,13 @@ overlay ul:after {
   transform: rotate(-45deg);
 }
 
-/******************* CODE PAGE  ******************/
+/* ===================================================
+   CODE PAGE
+   =================================================== */
 
-/** Header section **/
+/* 
+   Header Section
+   =================================================== */
 
 header {
   height: 100vh;
@@ -1418,7 +1366,9 @@ header .header-banner {
 
 }
 
-/** Nav section **/
+/* 
+   Nav Section
+   =================================================== */
 
 .nav-container {
   position: absolute;
@@ -1622,7 +1572,9 @@ nav ul li a {
 }
 
 
-/** Section 1**/
+/* 
+   Page Content
+   =================================================== */
 
 section.code-project {
   position: relative;
@@ -1726,8 +1678,9 @@ section.code-project .project-iframe iframe {
   border: #999 2px groove;
 }
 
-/*PARALLAX
+/**** Parallax ****/
 
+/*
 .parallax {
   position: relative;
   height: 50vh;
@@ -1764,10 +1717,129 @@ section.code-project .project-iframe iframe {
 }
 */
 
-/******************* MEDIA QUERIES ******************/
+/* 
+   Footer
+   =================================================== */
 
-/*** Global ***/
+.footer-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+}
 
-/*** Home ***/
+.footer-page-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
 
-/*** Code ***/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 4rem;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 200;
+  z-index: 15;
+  -webkit-box-shadow: 2px -2px 8px rgba(33, 33, 33, 0.8);
+  box-shadow: 2px -2px 8px rgba(33, 33, 33, 0.8);
+}
+
+footer .footer-left-mid {
+  text-align: right;
+  border-right: 1px solid #ccc;
+}
+
+footer .footer-left-mid p {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+footer .footer-right-mid {
+  text-align: left;
+}
+
+footer .footer-right-mid p {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+footer .footer-right .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+footer .footer-right .socials a i {
+  color: #eee;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+footer .footer-right .socials a i:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+footer .footer-right .socials .git:hover {
+  color: #c9510c;
+}
+
+footer .footer-right .socials .in:hover {
+  color: #0077B5;
+}
+
+footer .footer-right .socials .mail:hover {
+  color: #FBEBB4;
+}
+
+footer .footer-right .socials .twit:hover {
+  color: #1DA1F2;
+}
+
+footer .footer-right a {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+
+/* ===================================================
+   MEDIA QUERIES
+   =================================================== */
+
+/* 
+   Global
+   =================================================== */
+
+/* 
+   Home
+   =================================================== */
+
+/* 
+   Code
+   =================================================== */
