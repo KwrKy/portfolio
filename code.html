@@ -62,11 +62,11 @@
         </div>
         -->
           <div class="nav-container">
-            <div class="col-xs-3 logo"><a href="index.html">HOME_LOGO HERE</a></div>
-            <div class="col-xs-6 title">
+            <div class="col-xs-4 logo"><a href="index.html"><img src="img/Logo%20V2%20White.png" alt="CreatorD Logo" /></a></div>
+            <div class="col-xs-4 title">
               <h5>Code</h5>
             </div>
-            <nav class="col-xs-3">
+            <nav class="col-xs-4 nav-links">
               <ul>
                 <li>Music</li>
                 <li>Code</li>
@@ -155,11 +155,13 @@
         $fixedEl.toggleClass('fixed-nav', $window.scrollTop() + 0 > elTop);
         if ($(".nav-container").hasClass("fixed-nav")) {
           $('.nav-container .logo').addClass('nav-top');
+          $('.nav-container .title').addClass('no-shadow');
           console.log("Yay!");
           $('.nav-container nav').addClass('nav-top');
         } else if (!$(".nav-container").hasClass("fixed-nav")) {
           $('.nav-container .logo').removeClass('nav-top');
           $('.nav-container nav').removeClass('nav-top');
+          $('.nav-container .title').removeClass('no-shadow');
         }
       }
     });
