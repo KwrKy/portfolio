@@ -1382,6 +1382,9 @@ header .header-banner {
   text-align: center;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  -webkit-transition: width 0.7s, height 1s;
+  -webkit-transition: width 0.7s, height 0.8s 0.1s;
+  -webkit-transition: width 0.7s, height 0.1s 0.8s;
   -webkit-transition: width 0.7s;
   transition: width 0.7s;
   z-index: 1000;
@@ -1449,8 +1452,15 @@ header .header-banner {
 
 .nav-container .nav-links li a {
   text-decoration: none;
+  color: #bbb;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.nav-container .nav-links li a:hover {
   color: #fff;
 }
+
 
 .nav-container .nav-links .active {
   color: rgb(34, 132, 255);
