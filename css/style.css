@@ -570,8 +570,6 @@ overlay ul:after {
 
 /* :before params */
 
-.spin-text-list-item:before,
-.spin-text-list-item:before,
 .spin-text-list-item:before {
   content: "";
   position: absolute;
@@ -1483,14 +1481,72 @@ header .header-banner {
   opacity: 1;
 }
 
-.nav-container .nav-links {
-  border: yellow 1px solid;
-  margin: 0 auto;
-}
-
 .nav-container .nav-links ul {
   margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+  list-style: none;
 }
+
+.nav-container .nav-links li {
+  position: relative;
+}
+
+.nav-container .nav-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-container .nav-links .active {
+  color: rgb(34, 132, 255);
+}
+
+.nav-container .nav-links .active:before {
+  height: 0;
+}
+
+
+.nav-links li:before {
+  content: "";
+  position: absolute;
+  margin-top: 0.8rem;
+  margin-left: 0rem;
+  width: 0;
+  height: 0.5rem;
+  z-index: -10;
+  opacity: 0.7;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.nav-links li:nth-of-type(1):before {
+  background: skyblue;
+}
+
+.nav-links li:nth-of-type(2):before {
+  background: limegreen;
+}
+
+.nav-links li:nth-of-type(3):before {
+  background: darkorange;
+}
+
+.nav-links li:nth-of-type(4):before,
+.nav-links li:nth-of-type(5):before,
+.nav-links li:nth-of-type(6):before {
+  background: rgb(34, 132, 255);
+}
+
+
+.nav-links li:hover:before {
+  width: 4rem;
+}
+
 
 .nav-container .title {
   position: relative;
