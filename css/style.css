@@ -119,14 +119,22 @@ header {
   padding: 0;
 }
 
-header .header-banner {
+header .header-banner-code,
+header .header-banner-music {
   width: 100%;
   height: 100vh;
-  background-image: url("../img/plx-img1.jpeg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header .header-banner-code {
+  background-image: url("../img/plx-img1.jpeg");
+}
+
+header .header-banner-music {
+  background-image: url("../img/boysinging.jpeg");
 }
 
 .under-text {
@@ -159,8 +167,46 @@ header .header-banner {
   text-align: center;
   -webkit-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, font-weight 0.4s ease-in-out;
   transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, font-weight 0.4s ease-in-out;
-
 }
+
+/**** Parallax ****/
+
+/*
+.parallax {
+  position: relative;
+  height: 50vh;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax-group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-layer-base {
+  transform: translateZ(-2px) scale(3);
+}
+
+.parallax-layer-back {
+  transform: translateZ(-1px) scale(2);
+  background-image: url("../img/plx-img1.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
 
 /* 
    Standard Page Nav Section (no overlay)
@@ -406,6 +452,7 @@ footer {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   height: 4rem;
+  margin-top: 2rem;
   background: #333;
   color: #fff;
   text-align: center;
@@ -1133,7 +1180,7 @@ overlay ul:after {
   z-index: 20;
 }
 
-.audio-player-wrapper {
+.audio-player-wrapper-home {
   position: absolute;
   bottom: 0;
   height: 40%;
@@ -1145,7 +1192,7 @@ overlay ul:after {
   -moz-animation: slide-down 1s ease-out;
 }
 
-.audio-player-wrapper.open {
+.audio-player-wrapper-home.open {
   display: block;
   opacity: 1;
   animation: slide-up 1s ease-out;
@@ -1153,7 +1200,7 @@ overlay ul:after {
   -moz-animation: slide-up 1s ease-out;
 }
 
-.audio-player-wrapper iframe {
+.audio-player-wrapper-home iframe {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1704,6 +1751,7 @@ section.projects {
   display: block;
   background: #fff;
   width: 100%;
+  height: auto;
   padding: 0 2rem;
   z-index: 15;
 }
@@ -1715,7 +1763,7 @@ section.projects .subhead {
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
-  padding: 2rem;
+  padding: 4rem;
 }
 
 section.projects .subhead h2 {
@@ -1773,7 +1821,7 @@ section.projects .project-title a:hover {
 
 section.projects .project-intro {
   width: 100%;
-  height: 11rem;
+  height: 7rem;
   margin: 0 auto;
   padding: 0.5rem 2rem;
   text-align: justify;
@@ -1800,65 +1848,82 @@ section.projects .project-iframe iframe {
   border: #999 2px groove;
 }
 
-/**** Parallax ****/
-
-/*
-.parallax {
-  position: relative;
-  height: 50vh;
-  perspective: 1px;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.parallax-group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-
-.parallax-layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.parallax-layer-base {
-  transform: translateZ(-2px) scale(3);
-}
-
-.parallax-layer-back {
-  transform: translateZ(-1px) scale(2);
-  background-image: url("../img/plx-img1.jpeg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-*/
 
 /* ===================================================
-   CODE PAGE
+   MUSIC PAGE
    =================================================== */
 
 .projects-music {
   height: calc(100vh - 3rem);
 }
 
-.projects .music-box-row {
-  height: 26%;
+.projects .music-box-row {}
+
+.music-box-row .music-box {}
+
+.music-box-audio-wrapper {
+  position: relative;
+  bottom: 0;
+  display: block;
+  /* For the 16:9 aspect ratio */
+  padding: 6%;
+  height: 0;
 }
 
-.music-box-row .music-box {
-  background: #ccc;
-  width: 30%;
-  -webkit-box-sizing: -box;
-  box-sizing: -box;
-  margin: 0.3rem;
-
+.music-box-info-vim,
+.music-box-info-you {
+  position: absolute;
+  margin: 0 auto;
+  background: rgba(66, 66, 66, 0.5);
+  color: #fff;
+  padding: 0 1rem;
+  max-width: 83%;
 }
+
+.music-box-info-vim {
+  top: 50%;
+  left: 2.45rem
+}
+
+.music-box-info-you {
+  top: 50%;
+  left: 1rem
+}
+
+.music-box-info-vim p,
+.music-box-info-you p {
+  font-weight: 200;
+  opacity: 0;
+  display: none
+}
+
+.music-box-audio-wrapper iframe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.music-box-video-wrapper {
+  position: relative;
+  bottom: 0;
+  display: block;
+  /* For the 16:9 aspect ratio */
+  padding: 10%;
+  height: 0;
+}
+
+.music-box-video-wrapper iframe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  padding: 1rem;
+}
+
 
 /* 
    Page Content
