@@ -39,13 +39,13 @@
   <!--PAGE TODOs 
 
 //MVP    
-1.
-2.
+1. Add iframes
+2. Add video titles
 3.
 
 //COMPLETE    
-1. 
-2. 
+1a. Either make titles appear and disappear on play/pause OR
+1b. Add hover boxes with titles above iframes - changes state on hover / play / pause
 3. 
 4. 
 5. 
@@ -54,74 +54,121 @@
 
   <div class="footer-page-content">
     <header>
-      <div class="">
-        <div class="header-banner">
-          <!--
+      <div class="header-banner-music">
+        <!--
         <div class="parallax-layer parallax-layer-back">
         </div>
         -->
-          <div class="nav-container">
-            <div class="col-xs-4 logo"><a href="index.html"><img src="img/Logo%20V2%20White.png" alt="CreatorD Logo" /></a></div>
-            <div class="col-xs-4 title">
-              <h5>Music</h5>
-            </div>
-            <nav class="col-xs-4 nav-links">
-              <ul>
-                <li class="active">Music</li>
-                <li><a href="code.html">Code</a></li>
-                <li><a href="create.html">Create</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="clients.html">Clients</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
+        <div class="nav-container">
+          <div class="col-xs-4 logo"><a href="index.html"><img src="img/Logo%20V2%20White.png" alt="CreatorD Logo" /></a></div>
+          <div class="col-xs-4 title">
+            <h5>Music</h5>
           </div>
-          <div class="under-text">
-            <p>Since my first sleepless night discovering the wonder of composing music in 2009, <br> I have written for <br>stage productions, corporate promotions, adverts, and a 2-episode TV series. <br> And songs...just because I can.
-              <br>
-              <br>
-              <span><small>Scroll to sample my portfolio</small></span>
-            </p>
-          </div>
+          <nav class="col-xs-4 nav-links">
+            <ul>
+              <li class="active">Music</li>
+              <li><a href="code.html">Code</a></li>
+              <li><a href="create.html">Create</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="clients.html">Clients</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="under-text">
+          <p>Since my first sleepless night discovering the wonder of composing music in 2009, <br> I have written for <br>stage productions, corporate promotions, adverts, and a 2-episode TV series. <br> And songs...just because I can.
+            <br>
+            <br>
+            <span><small>Scroll to sample my portfolio</small></span>
+          </p>
         </div>
       </div>
     </header>
 
-    <section class="projects projects-music">
+    <section class="container projects projects-music">
       <div class="row subhead">
         <h2>Portfolio</h2>
       </div>
-      <div class="row music-box-row mb-tv">
-        <div class="col-xs-12 col-sm-6 col-md-4 music-box">
-          TV box 1
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 music-box">
-          TV Box 2
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 music-box">
-          TV Box 3
-        </div>
-      </div>
-      <div class="row music-box-row mb-corporate">
-        <div class="col-xs-12 col-sm-6 col-md-4 music-box">
-          Corporate box 1
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 music-box">
-          Corporate box 2
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 music-box">
-          Corporate box 3
+
+      <div class="row soundcloud">
+        <div class="audio-player-container">
+          <div class="audio-player-wrapper" id="soundcloud-player">
+            <div class="col-sm-12 col-md-4 music-box music-box-audio-wrapper">
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/363422084&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+            </div>
+            <div class="col-sm-12 col-md-4 music-box music-box-audio-wrapper">
+              <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2271597&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+            </div>
+            <div class="col-sm-12 col-md-4 music-box music-box-audio-wrapper">
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139990091&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="row music-box-row mb-inspire">
-        <div class="col-xs-12 col-sm-6 col-md-4 music-box">
-          Inspirational box 1
+        <div class="col-sm-12 col-md-4 music-box music-box-video-wrapper">
+          <iframe src="https://player.vimeo.com/video/220304191?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+          </iframe>
+          <div class="music-box-info-vim">
+            <h5>Eat</h5>
+            <p>An entry into the annual 48 hour film competition.</p>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 music-box">
-          Inspirational box 2
+        <div class="col-sm-12 col-md-4 music-box music-box-video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mZNHDs680WU?rel=0 &amp;showinfo=0" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+          <div class="music-box-info-you">
+            <h5>Mara's Story</h5>
+            <p>A video telling part of the story of a stage production</p>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 music-box">
-          Inspirational box 3
+        <div class="col-sm-12 col-md-4 music-box music-box-video-wrapper">
+          <iframe src="https://player.vimeo.com/video/239441239?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div class="music-box-info-vim">
+            <h5>Gwen's Story</h5>
+            <p>The inspirational story of a woman who lost her daughter.</p>
+          </div>
+        </div>
+
+        <div class="row music-box-row mb-corporate">
+          <div class="col-sm-12 col-md-4 music-box music-box-video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aJrWk8juxAI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+            <div class="music-box-info-you">
+              <h5>Introduction To Marley Pipe Systems</h5>
+              <p>An promotional video for Marley showcasing their company.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 music-box music-box-video-wrapper">
+            <iframe src="https://player.vimeo.com/video/239605539?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div class="music-box-info-vim">
+              <h5>Talisman Tool Hire</h5>
+              <p>An promotional video for Talisman showcasing their values and ethos.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 music-box music-box-video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9JJgW3dBID0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+            <div class="music-box-info-you">
+              <h5>Exxaro Incredible Leadership</h5>
+              <p>An internal video for Exxaro illustrating 3 of their cornerstone values.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row music-box-row mb-tv">
+        <div class="col-sm-12 col-md-6 music-box music-box-video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/LoLhJMA6LB8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+          <div class="music-box-info-you">
+            <h5>13thFLOOR Series Trailer</h5>
+            <p>A trailer introducing the 13thFLOOR TV series.</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 music-box music-box-video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4UgcqFh_yLI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+          <div class="music-box-info-you">
+            <h5>13thFLOOR Series Episode 1</h5>
+            <p>The first episode of the 13thFLOOR TV series.</p>
+          </div>
         </div>
       </div>
 
@@ -146,31 +193,28 @@
   </footer>
 
   <!-- Additional Scripts -->
-  <script>
-    var $window = $(window),
-      $fixedEl = $('.nav-container'),
-      elTop = $fixedEl.offset().top;
 
-    $window.on({
-      resize: function() {
-        elTop = $fixedEl.offset().top;
-        $window.trigger('scroll');
-      },
-      scroll: function() {
-        $fixedEl.toggleClass('fixed-nav', $window.scrollTop() + 0 > elTop);
-        if ($(".nav-container").hasClass("fixed-nav")) {
-          $('.nav-container .logo').addClass('nav-top');
-          $('.nav-container .title').addClass('no-shadow');
-          console.log("Yay!");
-          $('.nav-container nav').addClass('nav-top');
-        } else if (!$(".nav-container").hasClass("fixed-nav")) {
-          $('.nav-container .logo').removeClass('nav-top');
-          $('.nav-container nav').removeClass('nav-top');
-          $('.nav-container .title').removeClass('no-shadow');
-        }
-      }
+  <script>
+    var iframe = $('#player1')[0],
+      player = $f(iframe),
+      status = $('.status');
+
+    // When the player is ready, add listeners for pause, finish, and playProgress
+    player.addEvent('ready', function() {
+      status.text('ready');
+
+      player.addEvent('pause', onPause);
+      player.addEvent('finish', onFinish);
+      player.addEvent('playProgress', onPlayProgress);
+    });
+
+    // Call the API when a button is pressed
+    $('button').bind('click', function() {
+      player.api($(this).text().toLowerCase());
     });
   </script>
+
+  <script src="js/stdnav.js"></script>
   <script src="js/classie.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/home.js"></script>
