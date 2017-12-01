@@ -56,7 +56,7 @@
   <div class="footer-page-content">
     <header>
       <div class="">
-        <div class="header-banner">
+        <div class="header-banner-code">
           <!--
         <div class="parallax-layer parallax-layer-back">
         </div>
@@ -88,16 +88,14 @@
       </div>
     </header>
 
-    <section class="projects">
-      <div class="row code-subhead">
+    <section class="projects projects-code">
+      <div class="row subhead">
         <h2>Projects</h2>
       </div>
       <div class="row">
         <div class="col-xs-12 col-lg-6 code-project-twnaf">
           <div class="project-title">
-
             <h4><a href="https://www.theworldneedsafather.com/" target="_blank">The World Needs A Father</a></h4>
-
           </div>
           <div class="project-intro">
             <p>My first job was redesigning the website of the non-profit I work for. It was the first time I worked with code, and had figure out FTP, the Wordpress file structure and back end, and enough PHP not to break the site <small>(which I achieved within my first two weeks anyway)</small>.
@@ -143,32 +141,10 @@
 
   <!-- Additional Scripts -->
   <script>
-    var $window = $(window),
-      $fixedEl = $('.nav-container'),
-      elTop = $fixedEl.offset().top;
-
-    $window.on({
-      resize: function() {
-        elTop = $fixedEl.offset().top;
-        $window.trigger('scroll');
-      },
-      scroll: function() {
-        $fixedEl.toggleClass('fixed-nav', $window.scrollTop() + 0 > elTop);
-        if ($(".nav-container").hasClass("fixed-nav")) {
-          $('.nav-container .logo').addClass('nav-top');
-          $('.nav-container .title').addClass('no-shadow');
-          console.log("Yay!");
-          $('.nav-container nav').addClass('nav-top');
-        } else if (!$(".nav-container").hasClass("fixed-nav")) {
-          $('.nav-container .logo').removeClass('nav-top');
-          $('.nav-container nav').removeClass('nav-top');
-          $('.nav-container .title').removeClass('no-shadow');
-        }
-      }
-    });
   </script>
   <script src="js/classie.js"></script>
   <script src="js/nav.js"></script>
+  <script src="js/stdnav.js"></script>
   <script src="js/home.js"></script>
 
 </body>
