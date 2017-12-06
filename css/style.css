@@ -121,8 +121,9 @@ header {
 }
 
 header .header-banner-code,
-header .header-banner-contact,
-header .header-banner-music {
+header .header-banner-create,
+header .header-banner-music,
+header .header-banner-connect {
   width: 100%;
   height: 100vh;
   background-attachment: fixed;
@@ -137,6 +138,10 @@ header .header-banner-code {
 
 header .header-banner-music {
   background-image: url("../img/boysinging.jpeg");
+}
+
+header .header-banner-create {
+  background-image: url("../img/manlivesmoke.jpeg");
 }
 
 header .header-banner-contact {
