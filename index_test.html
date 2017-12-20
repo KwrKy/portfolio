@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Home</title>
+
+  <!-- 
+                    Made with love, coffee, margaritas and iTunes. 
+            I would link you to my site but, well, you're already here :) 
+                                        -->
+
+  <!-- External Styles & Scripts -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!--Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- jQuery -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="css/style_test.css">
+  <!-- Internal stylesheet -->
+  <script src="js/modernizr.custom.js"></script>
+  <!-- For overlay -->
+  <link rel="stylesheet" href="css/prettify.css">
+  <!--For source code -->
+  <script src="js/prettify.js"></script>
+  <!-- For source code -->
+
+  <!-- Testing Scripts  -->
+
+</head>
+
+<body>
+
+  <!-- 
+    //MVP
+    1. DONE    
+
+    //COMPLETE    
+      1. Change navs to Music | Code | Create | Connect
+      2. Fix transitions
+      3. Add front-page footer at the bottom
+        a. Contact deets & social
+        b. Hire me
+        c. Nav
+  -->
+
+
+  <!-- Nav Trigger & Logo Bar -->
+  <div class="nav-elements-bar">
+    <a href="index.html"><img class="logo" src="img/Logo%20V2%20Grey.png" alt="CreatorD Logo"></a>
+    <button type="button" class="nav-toggle" id="trigger-overlay"><span></span></button>
+  </div>
+
+  <!-- Nav (Overlay) -->
+  <div class="overlay overlay-hugeinc">
+    <button type="button" class="overlay-close">Close</button>
+    <nav>
+      <ul>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="code.html">Code</a></li>
+        <li><a href="create.html">Create</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Primary Text -->
+  <div class="container-fluid page-wrapper">
+    <div class="col-xs-12 col-sm-6 page-wrapper-left-top">
+      <div class="inner-left">
+        <div class="title-text" id="left-side-text">
+          <h1>Hi, I'm <span id="creatorD">Creator D.</span></h1>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 page-wrapper-right-bot">
+      <div class="page-wrapper-inner spin-text-content">
+        <div class="row spin-text-content-container">
+          <div class="inner-right">
+            <ul class="spin-text-list" id="spin-text-list">
+              <li class="spin-text-list-item" id="list-music">
+                <a href="#">
+                  <h2>I write music</h2>
+                </a>
+              </li>
+              <li class="spin-text-list-item" id="list-code">
+                <a href="#source-code">
+                  <h2>I build websites</h2>
+                </a>
+              </li>
+              <li class="spin-text-list-item" id="list-create">
+                <a href="#">
+                  <h2>I create.</h2>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row list-subtitle">
+          <!-- Container for right text content -->
+          <div class="col-sm-6">
+          </div>
+          <div class="col-sm-6" id="list-subtitle">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Scripts  open -->
+
+  <script src="js/classie.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/home.js"></script>
+  <!-- close -->
+
+</body>
+
+</html>
