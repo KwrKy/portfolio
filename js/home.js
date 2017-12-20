@@ -105,7 +105,7 @@ $(function () {
 //create panel popout
 $(function () {
   $("#list-create").click(function () {
-    $("#create-container").css("zIndex", "100");
+    $("#create-container").css("zIndex", "0");
     $('.create-content-container').addClass('open');
     $('#close-create').addClass('open');
     moveNameCreate();
