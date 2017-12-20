@@ -50,7 +50,7 @@ function moveNameCreate() {
 //music panels popout
 $(function () {
   $("#list-music").click(function () {
-    $("#media-container").css("zIndex", "0");
+    $("#media-container").css("zIndex", "85");
     $('.audio-player-wrapper-home').addClass('open');
     $('.video-player-wrapper').addClass('open');
     $('#close-media').addClass('open');
@@ -59,7 +59,7 @@ $(function () {
   });
   $(function () {
     $("#close-media").click(function () {
-      $("#media-container").css("zIndex", "-100");
+      $("#media-container").css("zIndex", "0");
       $('.audio-player-wrapper-home').removeClass('open');
       $('.video-player-wrapper').removeClass('open');
       $('#close-media').removeClass('open');
