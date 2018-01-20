@@ -103,6 +103,24 @@ li {
 }
 
 
+/**** Web Fonts ****/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Muli', sans-serif;
+}
+
+p,
+li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+
 /*
     @media screen and (min-width: 20rem) {
     html {
@@ -1861,12 +1879,23 @@ section.projects .project-iframe iframe {
 
 .connect-content {}
 
+.connect-content h2 {
+  text-decoration: underline;
+  padding-bottom: 1.5rem;
+}
+
 .connect-content p {
   text-align: justify;
+  padding: 1rem 2rem;
 }
 
 .connect-content li {
   text-align: left;
+}
+
+.connect-content img {
+  width: 50%;
+  height: auto;
 }
 
 .connect-content-about,
@@ -1876,15 +1905,15 @@ section.projects .project-iframe iframe {
 }
 
 .connect-content-about {
-  background: #a0c1e0;
+  background: #fff;
 }
 
 .connect-content-contact {
-  background: #b7e1ee;
+  background: #eee;
 }
 
 .connect-content-clients {
-  background: #b7eedc;
+  background: #fff;
 }
 
 
