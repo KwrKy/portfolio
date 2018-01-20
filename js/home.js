@@ -1,3 +1,38 @@
+/* Mobile href changes */
+
+$(function () {
+  var hrefs = ['#', 'music.html'];
+  $(window).on('resize', function () {
+    $('#musiclink').attr('href', function () {
+      return hrefs[$(window).width() > 767 ? 0 : 1];
+    });
+  }).trigger('resize');
+});
+
+$(function () {
+  var hrefs = ['#', 'code.html'];
+  $(window).on('resize', function () {
+    $('#codelink').attr('href', function () {
+      return hrefs[$(window).width() > 767 ? 0 : 1];
+    });
+  }).trigger('resize');
+});
+
+$(function () {
+  var hrefs = ['#', 'create.html'];
+  $(window).on('resize', function () {
+    $('#createlink').attr('href', function () {
+      return hrefs[$(window).width() > 767 ? 0 : 1];
+    });
+  }).trigger('resize');
+});
+
+
+
+var windowWidth = window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
+
 (function () {
   "use strict";
 
@@ -19,36 +54,45 @@
 }());
 
 function resetLeft() {
-  $("#list-subtitle").html("");
-  $("#left-side-text").css("visibility", "visible");
-}
-
-function toggleScroll() {
-  if ($(".audio-player-wrapper-home,#source-code,.create-content-container").hasClass("open")) {
-    $("#spin-text-list").addClass("paused");
-  } else if (!$(".audio-player-wrapper-home,#source-code,.create-content-container").hasClass("open")) {
-    $("#spin-text-list").removeClass("paused");
+  if (windowWidth > 767) {
+    $("#list-subtitle").html("");
+    $("#left-side-text").css("visibility", "visible");
   }
 }
 
+function toggleScroll() {
+  if (document.documentElement.clientWidth > 767) {
+    if ($(".audio-player-wrapper-home,#source-code,.create-content-container").hasClass("open")) {
+      $("#spin-text-list").addClass("paused");
+    } else if (!$(".audio-player-wrapper-home,#source-code,.create-content-container").hasClass("open")) {
+      $("#spin-text-list").removeClass("paused");
+    }
+  }
+}
 //combine these three into a more elegant solution
 function moveNameMusic() {
-  $("#list-subtitle").html("Some of the music I have composed.");
-  $("#left-side-text").css("visibility", "hidden");
+  if (windowWidth > 767) {
+    $("#list-subtitle").html("Some of the music I have composed.");
+    $("#left-side-text").css("visibility", "hidden");
+  }
 }
 
 function moveNameCode() {
-  $("#list-subtitle").html("Yep, that's what this page looks like under the hood.");
-  $("#left-side-text").css("visibility", "hidden");
+  if (windowWidth > 767) {
+    $("#list-subtitle").html("Yep, that's what this page looks like under the hood.");
+    $("#left-side-text").css("visibility", "hidden");
+  }
 }
 
 function moveNameCreate() {
-  $("#list-subtitle").html("My other creative offerings.");
-  $("#left-side-text").css("visibility", "hidden");
+  if (windowWidth > 767) {
+    $("#list-subtitle").html("My other creative offerings.");
+    $("#left-side-text").css("visibility", "hidden");
+  }
 }
 
 //music panels popout
-if (document.documentElement.clientWidth > 767) {
+if (windowWidth > 767) {
 
   $(function () {
     $("#list-music").click(function () {
@@ -73,7 +117,7 @@ if (document.documentElement.clientWidth > 767) {
 }
 
 //code panel popout
-if (document.documentElement.clientWidth > 767) {
+if (windowWidth > 767) {
   $(function () {
     $("#list-code").click(function () {
       $('#source-code').addClass('open');
@@ -108,7 +152,7 @@ if (document.documentElement.clientWidth > 767) {
 }
 
 //create panel popout
-if (document.documentElement.clientWidth > 767) {
+if (windowWidth > 767) {
   $(function () {
     $("#list-create").click(function () {
       $("#create-container").css("zIndex", "0");
