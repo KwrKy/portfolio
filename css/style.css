@@ -195,8 +195,8 @@ header .header-banner-contact {
   width: 100%;
   height: 4rem;
   background: #333;
-  -webkit-box-shadow: 0 2px 8px rgba(33, 33, 33, 0.6);
-  box-shadow: 0 2px 8px rgba(33, 33, 33, 0.6);
+  -webkit-box-shadow: 0 1px 8px rgba(33, 33, 33, 0.6);
+  box-shadow: 0 1px 8px rgba(33, 33, 33, 0.6);
   z-index: 20;
 }
 
@@ -479,7 +479,7 @@ footer {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   height: 4rem;
-  margin-top: 2rem;
+  margin-top: 0;
   background: #333;
   color: #fff;
   text-align: center;
@@ -489,8 +489,8 @@ footer {
   font-size: 0.8rem;
   font-weight: 200;
   z-index: 15;
-  -webkit-box-shadow: 2px -2px 8px rgba(33, 33, 33, 0.8);
-  box-shadow: 2px -2px 8px rgba(33, 33, 33, 0.8);
+  -webkit-box-shadow: 0px -1px 8px rgba(33, 33, 33, 0.8);
+  box-shadow: 0px -1px 8px rgba(33, 33, 33, 0.8);
 }
 
 footer .footer-left-mid {
@@ -1650,6 +1650,10 @@ section.projects .subhead h2:after {
   right: 0;
 }
 
+.projects .projects-body {
+  margin-bottom: 2rem;
+}
+
 section.projects .code-project-twnaf,
 .code-project-perizia {
   padding: 0 2rem;
@@ -1836,36 +1840,26 @@ section.projects .project-iframe iframe {
    =================================================== */
 
 .connect-wrapper {
-  position: relative;
-  top: 0;
-  width: 100vw;
-  height: calc(100vh - 4rem);
-  background: #eee;
+  /*Spaceholder */
 }
 
 .connect-row {
+  display: flex;
   text-align: center;
 }
 
 .connect-content {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   -ms-flex-line-pack: center;
-  center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  height: calc(100vh - 8rem);
 }
 
-.connect-content h2 {
-  position: absolute;
-  top: 2rem;
-}
+.connect-content {}
 
 .connect-content p {
   text-align: justify;
@@ -1878,7 +1872,7 @@ section.projects .project-iframe iframe {
 .connect-content-about,
 .connect-content-contact,
 .connect-content-clients {
-  border-right: 1px solid #000;
+  /* border-right: 1px solid #000; */
 }
 
 .connect-content-about {
@@ -1891,15 +1885,6 @@ section.projects .project-iframe iframe {
 
 .connect-content-clients {
   background: #b7eedc;
-}
-
-
-/* 
-   Footer
-   =================================================== */
-
-.footer-connect {
-  margin-top: 0;
 }
 
 
