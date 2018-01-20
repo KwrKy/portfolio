@@ -927,10 +927,10 @@ overlay ul:after {
   padding-left: 1.5rem;
   color: #333;
   -webkit-animation-name: change;
-  -webkit-animation-duration: 15s;
+  -webkit-animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
   animation-name: change;
-  animation-duration: 15s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
   /*border:solid 2px #0AA;*/
 }
@@ -1057,7 +1057,8 @@ overlay ul:after {
 * speed or the number of lines
 **/
 
-@-webkit-keyframes change {
+
+/* @-webkit-keyframes change {
   0%,
   21%,
   100% {
@@ -1079,7 +1080,7 @@ overlay ul:after {
     -webkit-transform: translate3d(0, -33%, 0);
     transform: translate3d(0, -33%, 0);
   }
-}
+} */
 
 @keyframes change {
   0%,
