@@ -4,4 +4,4 @@ This is portfolio serves two purposes; firstly, as a capstone project for a Cour
 
 That's pretty much it.
 
-If you stumble on this site randomly, please don't hate. Everyone has to have a first project ;)
+If you end up here, please feel free to give constructive criticism. Just bear in mind that this is a first project, so I still have much to learn :)
