@@ -1384,7 +1384,7 @@ overlay ul:after {
   width: 100%;
   height: 100%;
   z-index: 80;
-  background: url("../img/Vintage-paper5.jpg") left center no-repeat;
+  background: url("../img/Vintage-paper5.jpg") left center repeat;
   background-size: cover;
   animation: slide-out 1s ease-out;
   -webkit-animation: slide-out 1s ease-out;
@@ -1435,7 +1435,7 @@ overlay ul:after {
 }
 
 .create-page-mid {
-  top: 15%;
+  top: 5%;
   color: #333;
 }
 
@@ -1467,8 +1467,8 @@ overlay ul:after {
   position: absolute;
   display: block;
   top: 0.3em;
-  width: 45%;
-  height: 0.11em;
+  width: 35%;
+  height: 0.10em;
   background: #555;
 }
 
